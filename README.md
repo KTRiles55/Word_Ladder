@@ -1,4 +1,4 @@
 # Description
-A class project that reads from a text full of words and creates paths for words that differ by only one letter, then finds the shortest path to get from the beginning word to the ending word given by user input.
+A class project that reads from a dictionary file full of words and generates a map containing paths for words that differ by only one letter, then finds the shortest path for each pair of words provided in the 
 
 # User manual

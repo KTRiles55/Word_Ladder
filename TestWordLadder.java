@@ -5,13 +5,12 @@ import java.util.*;
 public class TestWordLadder {
 
 	public static void main(String[] args) throws IOException{
-		// TODO Auto-generated method stub
+		// generate word map
 		buildWordMap();
 		WordLadder hp = new WordLadder();
-		
-		hp.loadWordMap("wordmap.txt");
-		System.out.println(hp);  
-		
+		// retrieve word map
+		hp.loadWordMap("wordmap.txt"); 
+		// retrieve pairs of words for path searching
 		File readFile = new File("infile.txt");
 		Scanner in = new Scanner(readFile);
 		
@@ -48,7 +47,6 @@ public class TestWordLadder {
 		LinkedList<String> dict = new LinkedList<>();
 		File inFile = new File("dictionary.txt");
 		File outFile = new File("wordmap.txt");
-		// Left as exercise	
 		
 		try
 		{
@@ -58,7 +56,7 @@ public class TestWordLadder {
 				dict.add(input.next());
 			}
 		input.close();
-		
+			// write word paths into file
 			outFile.createNewFile();
 			Iterator<String> firstIter = dict.iterator();
 			LinkedList<String> temp = new LinkedList<>();
@@ -109,8 +107,7 @@ public class TestWordLadder {
    “lice” & “mike” reurns false. 
    */
 
-	public static boolean isAnEdge(String w1, String w2) {
-        // Left as exercise   
+	public static boolean isAnEdge(String w1, String w2) {   
 		int mismatches = 0;
 		int i = 0;
 		

@@ -6,7 +6,7 @@ A class project that reads from a dictionary file full of words and generates a 
 Install all files (except for "README.md").
 
 ## Step 2:
-Open up OS command shell.
+Open up the OS command shell.
 
 ## Step 3:
 Navigate to the directory where the files are stored.
